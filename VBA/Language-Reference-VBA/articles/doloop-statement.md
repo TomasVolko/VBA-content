@@ -48,13 +48,13 @@ Dim Check, Counter
 Check = True: Counter = 0 ' Initialize variables. 
 Do ' Outer loop. 
  Do While Counter < 20 ' Inner loop. 
- Counter = Counter + 1 ' Increment Counter. 
- If Counter = 10 Then ' If condition is True. 
- Check = False ' Set value of flag to False. 
- Exit Do ' Exit inner loop. 
- End If 
- LoopLoop Until Check = False ' Exit outer loop immediately. 
+  Counter = Counter + 1 ' Increment Counter.
+  
+  If Counter = 10 Then ' If condition is True. 
+   Check = False ' Set value of flag to False. 
+   Exit Do ' Exit inner loop. 
+  End If 
+ Loop
+Loop Until Check = False ' Exit outer loop immediately. 
 
 ```
-
-
